@@ -34,19 +34,23 @@ plt.imshow(gray)
 plt.title("Gray Image")
 plt.axis("off")
 plt.show()
-
+```
+```python
 canny=cv2.Canny(gray,120,150)
 plt.imshow(canny)
 plt.title("Canny Edge Detector")
 plt.axis("off")
 plt.show()
-
+```
+```
 lines=cv2.HoughLinesP(canny,1,np.pi/180,threshold=80,minLineLength=50,maxLineGap=250)
-
+```
+```
 for line in lines:
     x1,y1,x2,y2=line[0]
     cv2.line(img_c,(x1,y1),(x2,y2),(255,0,0),3)
-
+```
+```
 plt.imshow(img_c)
 plt.title("Result Image")
 plt.axis("off")
