@@ -13,7 +13,8 @@ Anaconda - Python 3.7
 #### Step5:Using the HoughLinesP(),detect line co-ordinates for every points in the images.Using For loop,draw the lines on the found co-ordinates.Display the image.
 
 ## Program
-``` Developed By: CHAITANYA P S
+```
+Developed By: CHAITANYA P S
 Register No: 212222230024
 ```
 ```python
